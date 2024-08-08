@@ -1,0 +1,18 @@
+Una variable me permite guardar un solo dato, lo que nos fuerza a crear demasiadas operaciones para guardar una gran cantidad de datos. Tenemos que ir procesando los datos que guardamos para no perderlos.
+
+¿Que sucede si tenemos que guardar más información?
+Arrays: Estructura de datos que nos permite guardar una secuencia de valores que tienen que ser el mismo tipo de datos. Un vector está determinado por n valores.
+
+La representación gráfica de un vector es un rectángulo con 4 divisiónes que representan que podemos guardar 4 elementos del mismo tipo de datos.
+Cada lugar del rectángulo se llama Índice. I1 - I2 - I3 - I4
+La indexación que utilizamos es BASE 1. 
+
+Arreglos: Conjunto finito de datos ordenados de elementos homogéneos. 
+
+---------------------
+- I1 - I2 - I3 - I4 -
+---------------------
+
+Para acceder a un índice se hace A[2]. Accede al valor que tiene en la posición 2. En éste caso es I2.
+
+Guardar los datos, acceder a ellos, hacer una operación.

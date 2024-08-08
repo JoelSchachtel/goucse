@@ -1,0 +1,5 @@
+La programación estructurada nos indica que debemos programar en pequeñas unidades. Debemos programar en sub programas o procedimientos.
+
+Programación en forma MODULAR:
+
+¿Como saber en que funcion o procedimientos dividir nuestro problemas? -> Se utiliza diseño descendente.
