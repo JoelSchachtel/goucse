@@ -6,8 +6,63 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+func cargaVector(vector *[20]int) {
+	for i := 0; i < 20; i++ {
+		vector[i] = rand.Intn(100)
+	}
+}
+
+func ordenarVector(vector *[20]int) {
+
+	n := len(vector)
+	vaux := 0
+
+	for i := 0; i < n-1; i++ {
+		for j := 0; j < n-i-1; j++ {
+			if vector[j] > vector[j+1] {
+				vaux = vector[j+1]
+				vector[j+1] = vector[j]
+				vector[j] = vaux
+			}
+		}
+	}
+}
+
+func intercalarVectores(A, B *[20]int) [40]int {
+
+	va, vb := 0, 0
+	var C [40]int
+
+	for i := 0; i < 40; i++ {
+		if va < 20 && (vb >= 20 || A[va] < B[vb]) {
+			C[i] = A[va]
+			va++
+		} else {
+			C[i] = B[vb]
+			vb++
+		}
+	}
+	return C
+}
 
 func main() {
-	fmt.Println()
+	rand.Seed(time.Now().Unix())
+	var A, B [20]int
+
+	cargaVector(&A)
+	ordenarVector(&A)
+	fmt.Println(A)
+
+	cargaVector(&B)
+	ordenarVector(&B)
+	fmt.Println(B)
+
+	resultado := intercalarVectores(&A, &B)
+	fmt.Println(resultado)
 }
