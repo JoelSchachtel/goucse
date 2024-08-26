@@ -1,0 +1,6 @@
+Matrices - Estructura de datos
+
+
+Se asgina igual que el vector, pero con dos dimensiones
+
+Vector [2][6] Vector de 2 filas y 6 columnas.
